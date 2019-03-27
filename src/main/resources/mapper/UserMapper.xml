@@ -77,4 +77,11 @@
     select id, phone, account, password, nickname, qq, createtime, ugrant, ulock
     from user
   </select>
+
+  <!--开发者添加-->
+  <select id="selectByAccount" resultMap="BaseResultMap">
+    select id, phone, account, password, nickname, qq, createtime, ugrant, ulock
+    from user
+    where account = #{0} and password = #{1}
+  </select>
 </mapper>

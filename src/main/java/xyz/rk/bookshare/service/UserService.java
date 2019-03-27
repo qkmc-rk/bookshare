@@ -1,6 +1,6 @@
 package xyz.rk.bookshare.service;
 
-import sun.tools.jstat.Token;
+import xyz.rk.bookshare.model.Token;
 import xyz.rk.bookshare.model.User;
 
 import java.util.List;

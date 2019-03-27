@@ -43,4 +43,7 @@ public interface UserMapper {
      * @mbg.generated Mon Mar 25 13:14:37 CST 2019
      */
     int updateByPrimaryKey(User record);
+
+    //通过账号查找用户
+    User selectByAccount(String account, String password);
 }
