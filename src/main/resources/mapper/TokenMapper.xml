@@ -69,4 +69,17 @@
     select id, userid, token, createtime, frame, freshtime
     from token
   </select>
+
+  <!--通过用户id查询用户的token-->
+  <select id="selectByUserId" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, userid, token, createtime, frame, freshtime
+    from token where userid = #{userId, jdbcType=INTEGER}
+  </select>
+
+  <!--通过token查询token-->
+  <select id="selectByToken" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select id, userid, token, createtime, frame, freshtime
+    from token where token = #{tokenStr, jdbcType=VARCHAR}
+  </select>
+
 </mapper>

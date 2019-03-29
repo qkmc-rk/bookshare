@@ -51,4 +51,5 @@ public interface BookService {
 
     boolean publishOne(Book book);
 
+    boolean updateOneBook(Book book);
 }

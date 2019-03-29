@@ -28,6 +28,9 @@ public class RestBean{
     public static RestBean serverError(Object obj, String msg){
         return new RestBean(obj,500, msg);
     }
+    public static RestBean commonError(String msg){
+        return new RestBean(null,100, msg);
+    }
 
 
     public Object getData() {

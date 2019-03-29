@@ -43,4 +43,6 @@ public interface ReplyMapper {
      * @mbg.generated Mon Mar 25 13:14:37 CST 2019
      */
     int updateByPrimaryKey(Reply record);
+
+    List<Reply> selectByCommentId(int commentId);
 }

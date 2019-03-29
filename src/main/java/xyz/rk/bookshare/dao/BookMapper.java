@@ -43,4 +43,6 @@ public interface BookMapper {
      * @mbg.generated Mon Mar 25 13:14:37 CST 2019
      */
     int updateByPrimaryKey(Book record);
+
+    int updateSoldByPrimaryKey(byte sold, int id);
 }

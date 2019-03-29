@@ -1,0 +1,70 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>bookshare web service</title>
+
+
+        <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.7/css/bootstrap.css}" />
+
+        <style>
+            #hole{
+                height: 100%;
+                background: beige;
+                margin-bottom: 1px;
+            }
+            .container-fluid{
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div id="hole" class="row">
+                <div class="row">
+                    <div class="col-lg-12 text-center" >
+                        <h3>bookshare v1.0 <span class="label label-default">API</span></h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center" >
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>API</th>
+                                <th>参数</th>
+                                <th>作用</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script type="text/javascript" th:src="@{/webjars/jquery/3.1.1/jquery.js}"></script>
+
+        <script type="text/javascript"  th:src="@{/webjars/bootstrap/3.3.7/js/bootstrap.js}"></script>
+    </body>
+</html>

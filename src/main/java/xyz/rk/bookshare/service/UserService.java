@@ -25,6 +25,8 @@ public interface UserService {
 
     Token getByUserId(int userid);
 
-    boolean regist(User user);
+    User regist(User user);
 
+
+    Token getByToken(String tokenStr);
 }

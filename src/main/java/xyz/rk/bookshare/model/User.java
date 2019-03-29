@@ -299,4 +299,19 @@ public class User {
     public void setUlock(Integer ulock) {
         this.ulock = ulock;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", phone='" + phone + '\'' +
+                ", account='" + account + '\'' +
+                ", password='" + password + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", qq='" + qq + '\'' +
+                ", createtime=" + createtime +
+                ", ugrant=" + ugrant +
+                ", ulock=" + ulock +
+                '}';
+    }
 }

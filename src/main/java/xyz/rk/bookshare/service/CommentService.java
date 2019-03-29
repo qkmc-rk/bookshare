@@ -15,4 +15,5 @@ public interface CommentService {
 
     List<Reply> getByCommentId(int commentId);
 
+    List<Reply> getReplyByCommentId(int commentId);
 }

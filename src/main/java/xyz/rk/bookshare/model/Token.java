@@ -200,4 +200,16 @@ public class Token {
     public void setFreshtime(Date freshtime) {
         this.freshtime = freshtime;
     }
+
+    @Override
+    public String toString() {
+        return "Token{" +
+                "id=" + id +
+                ", userid=" + userid +
+                ", token='" + token + '\'' +
+                ", createtime=" + createtime +
+                ", frame=" + frame +
+                ", freshtime=" + freshtime +
+                '}';
+    }
 }

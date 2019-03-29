@@ -1,18 +1,19 @@
 package xyz.rk.bookshare.service;
 
+import xyz.rk.bookshare.bean.OrderBean;
 import xyz.rk.bookshare.model.Order;
 
 import java.util.List;
 
 public interface OrderService {
 
-    List<Order> myBoughtOrder(int solderId);
+    List<OrderBean> myBoughtOrder(int userId);
 
-    List<Order> mySoldOrder(int userId);
-
-    boolean confirmBuy(Order order);
-
-    boolean confirmSell(Order order);
+    List<OrderBean> mySoldOrder(int userId);
 
     boolean deleteOrder(int orderId);
+
+    boolean confirm(int orderId, int userId);
+
+    boolean generateOrder(Order order);
 }

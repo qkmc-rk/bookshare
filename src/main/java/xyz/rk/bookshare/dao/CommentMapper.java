@@ -43,4 +43,6 @@ public interface CommentMapper {
      * @mbg.generated Mon Mar 25 13:14:37 CST 2019
      */
     int updateByPrimaryKey(Comment record);
+
+    List<Comment> selectByBookId(int bookId);
 }

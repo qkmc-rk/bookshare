@@ -44,5 +44,7 @@ public interface TokenMapper {
      */
     int updateByPrimaryKey(Token record);
 
-    Token selectByUserId(int userid);
+    Token selectByUserId(int userId);
+
+    Token selectByToken(String tokenStr);
 }

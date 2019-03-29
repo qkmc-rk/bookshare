@@ -46,4 +46,8 @@ public interface UserMapper {
 
     //通过账号查找用户
     User selectByAccount(String account, String password);
+
+    int updateUserPrimInfoByPrimaryKey(User user);
+
+    int updateUlockById(int userId, Integer LOCKED);
 }
